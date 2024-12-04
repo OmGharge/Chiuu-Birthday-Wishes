@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Chiuu!</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ffdee9, #b5fffc);
+            overflow-x: hidden;
+            color: #333;
+        }
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container Styling */
+        .container {
+            display: none;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        /* Header Section */
+        .header {
+            padding: 30px 20px;
+            text-align: center;
+            background: #ffe4e1;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ff69b4;
+            text-shadow: 2px 2px #ffa07a;
+        }
+        h2 {
+            color: #6a5acd;
+        }
+
+        /* Letter Section */
+        .letter-section {
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+            background: #ffffffdd;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        /* Puzzle Section */
+        .puzzle {
+            margin: 30px auto;
+            padding: 20px;
+            width: 80%;
+            background: #fffcf2;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .puzzle input, .puzzle button {
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
+            font-size: 1em;
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+        }
+
+        .puzzle button {
+            background: #ff69b4;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .puzzle button:hover {
+            background: #e91e63;
+        }
+
+        /* Mobile Friendly Adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .letter-section {
+                font-size: 0.9em;
+            }
+            .puzzle input, .puzzle button {
+                font-size: 1.2em;
+            }
+        }
+
+        /* Smooth Transitions */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        /* Celebration Emojis */
+        .emoji-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        .emoji {
+            position: absolute;
+            font-size: 2em;
+            animation: floatUp 3s linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-500px) scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #ffe4e1;
+            margin-top: 30px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Page 1: Puzzle Page -->
+    <div class="container" id="puzzle-page">
+        <div class="puzzle">
+            <h3>🎯 Birthday Puzzle 🎯</h3>
+            <p>What’s the nickname I call you? 🧐</p>
+            <input type="text" id="answer" placeholder="Your answer here">
+            <button onclick="checkAnswer()">Submit</button>
+            <p id="puzzle-feedback"></p>
+        </div>
+    </div>
+
+    <!-- Page 2: Letter and Celebration -->
+    <div class="container" id="letter-page">
+        <div class="header">
+            <h1>🎉 Happy Birthday My Cutu, My Princess! 🎉</h1>
+            <h2>You’re the sweetest friend ever! 💖</h2>
+        </div>
+        <div class="letter-section">
+            <h3>A Letter for My Dearest Chiuu (aka My Cutu, My Princess)</h3>
+            <p>Happy Birthday, my sunshine! 🎉✨</p>
+            <p>Today is not just any day; it’s the day the most beautiful, kind-hearted, and incredible person I’ve ever known came into this world. Words will never be enough to express how much you mean to me, but let me try my best to pour my heart out for you.</p>
+            <p>Chiuu, you are the light in my life that makes even the darkest days brighter. You have this magical way of turning every moment into a treasure. Whenever I think of you, I feel this unexplainable warmth in my heart, as if everything is right in the world just because you are in it.</p>
+            <p>You’ve been my friend for over a decade now, and every single memory we’ve created together is a piece of my heart. From the small, silly moments where we laughed until our stomachs hurt to the times you stood by me when I needed someone the most, you have always been there. You’ve shown me what true friendship means. You’re not just a friend to me; you are family, my constant, and my greatest blessing.</p>
+            <p>There’s something about you, my cutu, my princess, that makes life so much better. Maybe it’s your smile that can light up the gloomiest of days, your laughter that’s so infectious it’s like music to my ears, or your kind soul that makes this world a kinder place. You have this pure, beautiful heart that cares so deeply for everyone around you, and I am so lucky to be one of the people you care about.</p>
+            <p>You mean the world to me, and I love you more than words can ever express. I love you for who you are, the beautiful person who wears her heart on her sleeve, who isn’t afraid to dream big, and who always spreads joy wherever she goes. You make me the happiest person alive, Chiuu, and there isn’t a single day that I don’t feel grateful for you.</p>
+            <p>I know I’ve made mistakes, and there have been times I couldn’t be there for you in the way I should have. For that, I’m sorry from the bottom of my heart. But I promise you this: as long as I live, I will protect you, cherish you, and stand by you, no matter what. I care about you so much that I would sacrifice everything, even my own happiness, to see you smile. That’s how important you are to me.</p>
+            <p>You’ve been my guiding star, my little ray of hope, and the one who always reminds me of the good in the world. I hope you know that you are loved, valued, and appreciated more than you will ever realize. You are my Chiuu, my angel, my cutu, my princess, and my source of endless happiness.</p>
+            <p>So, today, on your birthday, I just want you to know how deeply you are loved. Never doubt your worth, because you are priceless. Never question your importance, because this world wouldn’t be the same without you. Never forget that no matter where life takes us, you will always have me by your side.</p>
+            <p>I hope this year brings you all the happiness, success, and love that you deserve. Keep shining as brightly as you always do, and remember that you are the best person I’ve ever met, my best friend, and my forever inspiration.</p>
+            <p>Thank you for being you, and thank you for being mine. I love you so much, my cutu, my princess. 💖✨</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Made with 💜 by Omee
+    </div>
+
+    <div id="emoji-container" class="emoji-container"></div>
+
+    <script>
+        function createEmoji() {
+            const container = document.getElementById('emoji-container');
+            const emojiList = ['🎉', '🎂', '✨', '🎈', '💖', '🌟'];
+            const emoji = document.createElement('div');
+            emoji.className = 'emoji';
+            emoji.textContent = emojiList[Math.floor(Math.random() * emojiList.length)];
+            emoji.style.left = Math.random() * 100 + '%';
+            emoji.style.top = Math.random() * 100 + '%';
+            emoji.style.fontSize = Math.random() * 2 + 1 + 'em';
+            container.appendChild(emoji);
+            setTimeout(() => emoji.remove(), 3000);
+        }
+
+        function startEmojiCelebration() {
+            setInterval(createEmoji, 300);
+        }
+
+        function checkAnswer() {
+            const answer = document.getElementById('answer').value.trim().toLowerCase();
+            const feedback = document.getElementById('puzzle-feedback');
+            if (answer === 'chiu' || answer === 'chiuu') {
+                feedback.textContent = "🎉 Correct! You're amazing! Happy Birthday! 🎉";
+                feedback.style.color = "green";
+                setTimeout(() => {
+                    document.getElementById('puzzle-page').style.display = 'none';
+                    document.getElementById('letter-page').style.display = 'block';
+                }, 2000);
+            } else {
+                feedback.textContent = "❌ Try again! Hint: It’s what I always call you. 😉";
+                feedback.style.color = "red";
+            }
+        }
+
+        window.onload = () => {
+            startEmojiCelebration();
+            document.getElementById('puzzle-page').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
